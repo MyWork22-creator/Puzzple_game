@@ -1,49 +1,179 @@
-# Getting Started with Create React App
+# 🧩 EchoBot Puzzle Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A 2D puzzle game where an AI learns from your movements and gradually mimics your behavior. Navigate through increasingly complex mazes while the EchoBot AI studies your patterns and adapts its strategy.
 
-## Available Scripts
+## 🎮 Game Features
 
-In the project directory, you can run:
+### 🧠 Intelligent AI System
 
-### `npm start`
+- **Level 1**: EchoBot moves randomly, acting as a helpful companion
+- **Level 2**: EchoBot starts learning from your Level 1 movements
+- **Level 3+**: EchoBot mimics your strategies and predicts your moves
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🎯 Progressive Difficulty
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 6 handcrafted levels with increasing complexity
+- Grid-based puzzle mechanics
+- Simple goal: reach the target while avoiding walls
 
-### `npm test`
+### 💾 Local Storage System
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Automatic save/load functionality
+- Progress tracking across sessions
+- Movement history storage for AI learning
+- Performance statistics
 
-### `npm run build`
+### 🎨 Modern UI Design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Minimalist pixel-style graphics
+- Responsive design for all devices
+- Smooth animations and visual feedback
+- Accessibility features included
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js (version 14 or higher)
+- npm or yarn package manager
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository
+2. Navigate to the puzzle_game directory
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running the Game
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) to play the game.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Running Tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm test
+```
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+## 🎮 How to Play
+
+### Controls
+
+- **Arrow Keys** or **WASD**: Move your character
+- **R**: Reset current level
+- **Mouse**: Click adjacent cells to move
+
+### Game Elements
+
+- 👤 **You**: The player character
+- 🤖 **EchoBot**: The AI that learns from you
+- 🎯 **Goal**: Reach this to complete the level
+- 🧱 **Wall**: Impassable obstacles
+- 🤝 **Overlap**: When you and EchoBot are on the same cell
+
+### Objective
+
+Navigate through each level to reach the goal (🎯) while observing how EchoBot learns and adapts to your movement patterns.
+
+## 🧠 AI Learning System
+
+The EchoBot AI uses a sophisticated learning system:
+
+1. **Pattern Recognition**: Stores and analyzes your movement sequences
+2. **Frequency Analysis**: Learns which directions you prefer
+3. **Adaptive Behavior**: Gradually transitions from random to strategic movement
+4. **Memory Persistence**: Remembers patterns across game sessions
+
+## 🏗️ Technical Architecture
+
+### Core Components
+
+- **PuzzleGame**: Main game controller and state management
+- **GameBoard**: Renders the game grid and handles interactions
+- **GameUI**: User interface and game statistics
+- **EchoBot**: AI system with learning algorithms
+- **LevelManager**: Level data and progression logic
+- **StorageManager**: Local storage and data persistence
+
+### Technologies Used
+
+- React 19.1.0
+- CSS3 with modern features
+- Local Storage API
+- Jest for testing
+- Create React App for build system
+
+## 🎨 Design Philosophy
+
+### Minimalist Aesthetics
+
+- Clean, pixel-inspired visual design
+- Intuitive emoji-based game elements
+- Smooth animations and transitions
+
+### Accessibility First
+
+- High contrast mode support
+- Reduced motion preferences
+- Keyboard navigation
+- Screen reader friendly
+
+### Performance Optimized
+
+- Efficient state management
+- Minimal re-renders
+- Responsive design patterns
+
+## 🧪 Testing
+
+The game includes comprehensive tests covering:
+
+- Component rendering
+- User interactions
+- Game logic
+- AI behavior
+- Storage functionality
+
+Run tests with: `npm test`
+
+## 🔮 Future Enhancements
+
+Potential features for future versions:
+
+- Sound effects and background music
+- More complex puzzle mechanics (keys, doors, movable boxes)
+- Multiplayer mode
+- Level editor
+- Advanced AI personalities
+- Achievement system
+
+## 📱 Browser Compatibility
+
+Tested and optimized for:
+
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+## 🤝 Contributing
+
+This is a demonstration project showcasing AI learning in games. Feel free to explore the code and adapt it for your own projects!
+
+## 📄 License
+
+This project is open source and available under the MIT License.
 
 ### Code Splitting
 
